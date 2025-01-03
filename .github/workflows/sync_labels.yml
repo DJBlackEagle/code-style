@@ -1,0 +1,34 @@
+name: Sync labels
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/labels.yml
+
+jobs:
+  labels:
+    name: ♻️ Sync labels
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: ⤵️ Check out code from GitHub
+        uses: actions/checkout@v4
+      - name: 🚀 Run Label Syncer
+        uses: micnncim/action-label-syncer@v1.3.0
+        with:
+          manifest: .github/labels.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 🆕 Create issue
+        uses: imjohnbo/issue-bot@v3
+        with:
+          assignees: 'djblackeagle'
+          labels: 'github-actions, todo'
+          pinned: true
+          close-previous: true
+          linked-comments: true
+          title: '[TODO] Lables was synced'
+          body: 'Check issues and pull requests, after the lables was synced.'
