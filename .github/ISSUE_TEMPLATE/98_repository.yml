@@ -1,0 +1,32 @@
+name: '💾 Repository'
+description: 'Something, which depends on this repository.'
+title: '[REPO] '
+assignees:
+  - 'DJBlackEagle'
+labels: ['repository']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ We use GitHub Issues to track bug reports, feature requests and regressions
+
+        Use this issue type only, then your issue depends on this repository.
+
+        ---
+
+  - type: checkboxes
+    attributes:
+      label: 'Is there an existing issue that is already proposing this?'
+      description: 'Please search [here](./?q=is%3Aissue) to see if an issue already exists for the feature you are requesting'
+      options:
+        - label: 'I have searched the existing issues'
+          required: true
+        - label: 'I use the right issue type'
+          required: true
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Describe your request.'
+      description: 'A clear and concise description of your request'
