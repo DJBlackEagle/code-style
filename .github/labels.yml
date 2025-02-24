@@ -119,7 +119,7 @@
   description: 'Report a regression in functionality, performance, or behavior.'
 - name: 'Issue: Repository Management'
   color: 8a91ad
-  description: 'Report an issue or suggest an improvement related to repository configuration, structure, or workflows.'
+  description: 'Report an issue related to repository configuration, structure, or workflows.'
 - name: 'Issue: Suggestion for Improving Performance'
   color: 8a91ad
   description: 'Provide a suggestion to improve the performance.'

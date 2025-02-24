@@ -1,0 +1,52 @@
+{
+  "name": "@djblackeagle/code-style",
+  "version": "0.0.1",
+  "description": "Unified configuration for consistent code style, leveraging popular tools like ESLint, Prettier, and Commitlint to ensure code quality, readability, and standardized commit messages.",
+  "license": "MIT",
+  "author": "DJBlackEagle <djblackeagle-dev@djblackeagle.services>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJBlackEagle/code-style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DJBlackEagle/code-style/issues"
+  },
+  "homepage": "https://github.com/DJBlackEagle/code-style#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "pnpm run clean:artifacts && pnpm run clean:build && pnpm run clean:cache && pnpm run clean:node",
+    "clean:artifacts": "rm -rf ./.artifacts",
+    "clean:build": "rm -rf ./dist",
+    "clean:cache": "rm -rf ./.cache",
+    "clean:node": "rm -rf ./node_modules",
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "echo \"Not implemented yet (test).\" && exit 0",
+    "lint": "echo \"Not implemented yet (lint).\" && exit 0",
+    "lint:file": "echo \"Not implemented yet (lint:file).\" && exit 0",
+    "lint:fix": "echo \"Not implemented yet (lint:fix).\" && exit 0",
+    "lint:fix:file": "echo \"Not implemented yet (lint:fix:file).\" && exit 0",
+    "format": "echo \"Not implemented yet (format).\" && exit 0",
+    "format:file": "echo \"Not implemented yet (format:file).\" && exit 0",
+    "format:fix": "echo \"Not implemented yet (format:fix).\" && exit 0",
+    "format:fix:file": "echo \"Not implemented yet (format:fix:file).\" && exit 0"
+  },
+  "files": [
+    "./dist",
+    "./CHANGELOG.md",
+    "./CODE_OF_CONDUCT.md",
+    "./CONTRIBUTING.md",
+    "./LICENSE",
+    "./README.md",
+    "./SECURITY.md",
+    "./package.json"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
