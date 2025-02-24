@@ -26,10 +26,10 @@ jobs:
       - name: 🆕 Create issue
         uses: imjohnbo/issue-bot@v3
         with:
-          assignees: "DJBlackEagle"
-          labels: "github-actions, todo"
+          assignees: 'DJBlackEagle'
+          labels: 'github-actions, todo, Issue: Workflow'
           pinned: false
           close-previous: true
           linked-comments: true
-          title: "[WORKFLOW] Lables was synced"
-          body: "Check issues and pull requests, after the lables was synced."
+          title: '[WORKFLOW] Lables was synced'
+          body: 'Check issues and pull requests, after the lables was synced.'

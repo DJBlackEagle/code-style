@@ -1,4 +1,5 @@
 <!-- omit in toc -->
+
 # Contributing to @djblackeagle/code-style
 
 First off, thanks for taking the time to contribute! ❤️
@@ -7,12 +8,13 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 
 > And if you like the project, but just don't have time to contribute, that's fine. There are other easy ways to support the project and show your appreciation, which we would also be very happy about:
 >
-> -   Star the project
-> -   Tweet about it
-> -   Refer this project in your project's readme
-> -   Mention the project at local meetups and tell your friends/colleagues
+> - Star the project
+> - Tweet about it
+> - Refer this project in your project's readme
+> - Mention the project at local meetups and tell your friends/colleagues
 
 <!-- omit in toc -->
+
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
@@ -38,9 +40,9 @@ Before you ask a question, it is best to search for existing [Issues][REF_INTERN
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
--   Open an [Issue][REF_INTERN_URL_NEW_ISSUE].
--   Provide as much context as you can about what you're running into.
--   Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
+- Open an [Issue][REF_INTERN_URL_NEW_ISSUE].
+- Provide as much context as you can about what you're running into.
+- Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
 
 We will then take care of the issue as soon as possible.
 
@@ -68,22 +70,24 @@ Depending on how large the project is, you may want to outsource the questioning
 ### Reporting Bugs
 
 <!-- omit in toc -->
+
 #### Before Submitting a Bug Report
 
 A good bug report shouldn't leave others needing to chase you up for more information. Therefore, we ask you to investigate carefully, collect information and describe the issue in detail in your report. Please complete the following steps in advance to help us fix any potential bug as fast as possible.
 
--   Make sure that you are using the latest version.
--   Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation][REF_INTERN_URL_README]. If you are looking for support, you might want to check [this section](#i-have-a-question)).
--   To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker][REF_INTERN_URL_NEW_ISSUE].
--   Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
--   Collect information about the bug:
-    -   Stack trace (Traceback)
-    -   OS, Platform and Version (Windows, Linux, macOS, x86, ARM)
-    -   Version of the interpreter, compiler, SDK, runtime environment, package manager, depending on what seems relevant.
-    -   Possibly your input and the output
-    -   Can you reliably reproduce the issue? And can you also reproduce it with older versions?
+- Make sure that you are using the latest version.
+- Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation][REF_INTERN_URL_README]. If you are looking for support, you might want to check [this section](#i-have-a-question)).
+- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker][REF_INTERN_URL_NEW_ISSUE].
+- Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
+- Collect information about the bug:
+  - Stack trace (Traceback)
+  - OS, Platform and Version (Windows, Linux, macOS, x86, ARM)
+  - Version of the interpreter, compiler, SDK, runtime environment, package manager, depending on what seems relevant.
+  - Possibly your input and the output
+  - Can you reliably reproduce the issue? And can you also reproduce it with older versions?
 
 <!-- omit in toc -->
+
 #### How Do I Submit a Good Bug Report?
 
 > You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to [DJ BlackEagle][REF_INTERN_EMAIL_ADDRESS_SECURITY].
@@ -92,16 +96,16 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
--   Open an [Issue][REF_INTERN_URL_NEW_ISSUE]. (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
--   Explain the behavior you would expect and the actual behavior.
--   Please provide as much context as possible and describe the _reproduction steps_ that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
--   Provide the information you collected in the previous section.
+- Open an [Issue][REF_INTERN_URL_NEW_ISSUE]. (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
+- Explain the behavior you would expect and the actual behavior.
+- Please provide as much context as possible and describe the _reproduction steps_ that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
+- Provide the information you collected in the previous section.
 
 Once it's filed:
 
--   The project team will label the issue accordingly.
--   A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
--   If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](#your-first-code-contribution).
+- The project team will label the issue accordingly.
+- A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
+- If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](#your-first-code-contribution).
 
 <!-- You might want to create an issue template for bugs and errors that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
 
@@ -110,23 +114,25 @@ Once it's filed:
 This section guides you through submitting an enhancement suggestion for @djblackeagle/code-style, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
 
 <!-- omit in toc -->
+
 #### Before Submitting an Enhancement
 
--   Make sure that you are using the latest version.
--   Read the [documentation][REF_INTERN_URL_README] carefully and find out if the functionality is already covered, maybe by an individual configuration.
--   Perform a [search][REF_INTERN_URL_ISSUES] to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
--   Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
+- Make sure that you are using the latest version.
+- Read the [documentation][REF_INTERN_URL_README] carefully and find out if the functionality is already covered, maybe by an individual configuration.
+- Perform a [search][REF_INTERN_URL_ISSUES] to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+- Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
 <!-- omit in toc -->
+
 #### How Do I Submit a Good Enhancement Suggestion?
 
 Enhancement suggestions are tracked as [issues][REF_INTERN_URL_ISSUES].
 
--   Use a **clear and descriptive title** for the issue to identify the suggestion.
--   Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
--   **Describe the current behavior** and **explain which behavior you expected to see instead** and why. At this point you can also tell which alternatives do not work for you.
--   You may want to **include screenshots or screen recordings** which help you demonstrate the steps or point out the part which the suggestion is related to. You can use [LICEcap](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and the built-in [screen recorder in GNOME](https://help.gnome.org/users/gnome-help/stable/screen-shot-record.html.en) or [SimpleScreenRecorder](https://github.com/MaartenBaert/ssr) on Linux. <!-- this should only be included if the project has a GUI -->
--   **Explain why this enhancement would be useful** to most @djblackeagle/code-style users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
+- Use a **clear and descriptive title** for the issue to identify the suggestion.
+- Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
+- **Describe the current behavior** and **explain which behavior you expected to see instead** and why. At this point you can also tell which alternatives do not work for you.
+- You may want to **include screenshots or screen recordings** which help you demonstrate the steps or point out the part which the suggestion is related to. You can use [LICEcap](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and the built-in [screen recorder in GNOME](https://help.gnome.org/users/gnome-help/stable/screen-shot-record.html.en) or [SimpleScreenRecorder](https://github.com/MaartenBaert/ssr) on Linux. <!-- this should only be included if the project has a GUI -->
+- **Explain why this enhancement would be useful** to most @djblackeagle/code-style users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
 
 <!-- You might want to create an issue template for enhancement suggestions that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
 
@@ -153,6 +159,7 @@ We follow the commit message policy based on the '[Conventional Commits][REF_EXT
 We have strict rules for formatting our git commit messages. This ensures **more readable messages** that are easy to follow when reviewing the project history. Additionally, we use git commit messages to **automatically generate the changelog**.
 
 <!-- omit in toc -->
+
 #### Commit Message Format
 
 Each commit message consists of a **header**, a **body**, and a **footer**. The header follows a specific format that includes a **type**, a **scope**, and a **subject**:
@@ -172,6 +179,7 @@ No line in the commit message should exceed 100 characters. This ensures better 
 Footer should include a [closing reference to an issue](https://help.github.com/articles/closing-issues-via-commit-messages/) if applicable.
 
 <!-- omit in toc -->
+
 #### Revert
 
 If the commit reverts a previous commit, it should begin with `revert:`, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
@@ -179,23 +187,25 @@ If the commit reverts a previous commit, it should begin with `revert:`, followe
 If the commit reverts a previous commit, it should begin with `revert:`, followed by the header of the reverted commit. The body should include the line: `This reverts commit <hash>.`, where <hash> is the SHA of the commit being reverted.
 
 <!-- omit in toc -->
+
 #### Type
 
 Must be one of the following:
 
--   **build**: Changes affecting the build system or external dependencies (e.g., gulp, broccoli, npm).
--   **chore**: Task updates without affecting production code.
--   **ci**: Changes to CI configuration files and scripts (e.g., Travis, CircleCI, BrowserStack, SauceLabs).
--   **docs**: Documentation-only changes.
--   **feat**: Introducing a new feature.
--   **fix**: Resolving a bug.
--   **perf**: Code changes that enhance performance.
--   **refactor**: Code changes that neither fix bugs nor add features.
--   **style**: Changes without altering code functionality (e.g., white-space, formatting, missing semicolons).
--   **test**: Adding or correcting tests.
--   **sample**: Changes to sample code.
+- **build**: Changes affecting the build system or external dependencies (e.g., gulp, broccoli, npm).
+- **chore**: Task updates without affecting production code.
+- **ci**: Changes to CI configuration files and scripts (e.g., Travis, CircleCI, BrowserStack, SauceLabs).
+- **docs**: Documentation-only changes.
+- **feat**: Introducing a new feature.
+- **fix**: Resolving a bug.
+- **perf**: Code changes that enhance performance.
+- **refactor**: Code changes that neither fix bugs nor add features.
+- **style**: Changes without altering code functionality (e.g., white-space, formatting, missing semicolons).
+- **test**: Adding or correcting tests.
+- **sample**: Changes to sample code.
 
 <!-- omit in toc -->
+
 #### Scope
 
 The scope should match the name of the affected npm package, as it would be perceived by someone reading the changelog generated from commit messages.
@@ -216,21 +226,24 @@ The following is the list of supported scopes:
 If your change affects more than one package, separate the scopes with a comma (e.g., `common,core`).
 
 <!-- omit in toc -->
+
 #### Subject
 
 The subject contains a succinct description of the change:
 
--   Use the imperative, present tense: "change," not "changed" or "changes."
--   Do not capitalize the first letter.
--   Avoid a period (.) at the end.
+- Use the imperative, present tense: "change," not "changed" or "changes."
+- Do not capitalize the first letter.
+- Avoid a period (.) at the end.
 
 <!-- omit in toc -->
+
 #### Body
 
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" or "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
 <!-- omit in toc -->
+
 #### Footer
 
 The footer should include any information about **Breaking Changes** and is also the appropriate place to reference GitHub issues that this commit **closes**.
@@ -240,6 +253,7 @@ The footer should include any information about **Breaking Changes** and is also
 A detailed explanation can be found in this [document][REF_EXTERN_COMMIT_MESSAGE_FORMAT].
 
 <!-- omit in toc -->
+
 ## Attribution
 
 This guide is based on the [contributing.md][REF_EXTERN_CONTRIBUTING_MD]!
