@@ -26,10 +26,10 @@
     "clean:node": "rm -rf ./node_modules",
     "build": "tsc -p ./tsconfig.build.json",
     "test": "echo \"Not implemented yet (test).\" && exit 0",
-    "lint": "echo \"Not implemented yet (lint).\" && exit 0",
-    "lint:file": "echo \"Not implemented yet (lint:file).\" && exit 0",
-    "lint:fix": "echo \"Not implemented yet (lint:fix).\" && exit 0",
-    "lint:fix:file": "echo \"Not implemented yet (lint:fix:file).\" && exit 0",
+    "lint": "eslint .",
+    "lint:file": "eslint",
+    "lint:fix": "eslint --fix .",
+    "lint:fix:file": "eslint --fix",
     "format": "prettier --check --ignore-unknown .",
     "format:file": "prettier --check --ignore-unknown",
     "format:fix": "prettier --write --ignore-unknown .",
@@ -45,11 +45,21 @@
     "./SECURITY.md",
     "./package.json"
   ],
+  "dependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.2",
+    "typescript-eslint": "^8.25.0"
+  },
   "devDependencies": {
     "@types/node": "^22.13.5",
     "typescript": "^5.7.3"
-  },
-  "dependencies": {
-    "prettier": "^3.5.2"
   }
 }
