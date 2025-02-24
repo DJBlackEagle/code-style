@@ -1,4 +1,4 @@
-function howAreYou(who: String = 'world'): string {
+function howAreYou(who: string = 'world'): string {
   return `How are you ${who}! `;
 }
 
