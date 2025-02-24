@@ -81,12 +81,18 @@
 - name: 'todo'
   color: 5319e7
   description: 'A todo issue.'
+- name: 'task'
+  color: 5319e7
+  description: 'A task issue.'
 - name: 'repository'
   color: 799ab0
   description: 'Have affect of the repository.'
 - name: 'management'
   color: 799ab0
   description: 'Management things.'
+- name: 'project'
+  color: 0e8a16
+  description: 'Project things.'
 - name: 'needs triage'
   color: 1d76db
   description: 'We need to talk.'
@@ -123,3 +129,6 @@
 - name: 'Issue: Documentation'
   color: 8a91ad
   description: 'Solely about the documentation of the project'
+- name: 'Issue: Workflow'
+  color: 8a91ad
+  description: 'Created by the workflow.'
