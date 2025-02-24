@@ -28,8 +28,8 @@ jobs:
         with:
           assignees: "DJBlackEagle"
           labels: "github-actions, todo"
-          pinned: true
+          pinned: false
           close-previous: true
           linked-comments: true
-          title: "[TODO] Lables was synced"
+          title: "[WORKFLOW] Lables was synced"
           body: "Check issues and pull requests, after the lables was synced."
