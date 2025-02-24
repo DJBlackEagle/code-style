@@ -1,0 +1,128 @@
+name: 🚀 Feature Request
+description: Suggest a new feature or improvement for the project.
+labels: ['feature', 'Issue: Feature Request']
+assignees:
+  - DJBlackEagle
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🚀 Feature Request issue
+        Use this template to propose a new feature or improvement. Please provide as much detail as possible to help us evaluate and implement your idea.
+
+        Please fill out the sections below to help us address the issue effectively.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📜 Terms
+
+  - type: checkboxes
+    id: existing_issue
+    attributes:
+      label: ⚠️ Is there an existing issue for this?
+      description: Please search [here](./?q=is%3Aissue) to see if an issue already exists for the bug you encountered
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ⚖️ Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/DJBlackEagle/code-style/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📋 Issue description
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🏷️ Severity Level
+      description: How critical is this feature for the application?
+      options:
+        - 🚨 Critical - Essential for core functionality
+        - ⚠️ High - Significant improvement or high impact
+        - ❕ Medium - Useful but not urgent
+        - ✅ Low - Nice-to-have, low priority
+      default: 2
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Is your feature request related to a problem? Please describe it
+      description: 'A clear and concise description of what the problem is'
+      placeholder: |
+        I have an issue when ...
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe the solution you'd like
+      description: 'A clear and concise description of what you want to happen. Add any considered drawbacks'
+
+  - type: textarea
+    attributes:
+      label: Teachability, documentation, adoption, migration strategy
+      description: 'If you can, explain how users will be able to use this and possibly write out a version the docs. Maybe a screenshot or design?'
+
+  - type: textarea
+    attributes:
+      label: What is the motivation / use case for changing the behavior?
+      description: 'Describe the motivation or the concrete use case'
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # ℹ️ Additional information
+
+  - type: textarea
+    id: program_flowchart
+    attributes:
+      label: 🔁 Program Flowchart
+      description: |
+        Provide a flowchart or a step-by-step logic for the proposed feature. You can describe it in text and also include visuals directly.
+
+        #### How to include visuals:
+        - **Images:** Copy and paste an image directly into this field while writing the issue.
+        - **PDFs:** Drag and drop a PDF file directly into this field while writing the issue.
+      placeholder: E.g., User clicks button → Data is validated → Response is displayed.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: ➕ Additional Context
+      description: Provide any additional context, links, or resources to support your request.
+      placeholder: E.g., Reference to similar features in other tools or mockups of the feature.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: markdown
+    attributes:
+      value: Thanks for completing our form!
