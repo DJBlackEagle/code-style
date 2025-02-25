@@ -30,10 +30,12 @@
     "lint:file": "eslint",
     "lint:fix": "eslint --fix .",
     "lint:fix:file": "eslint --fix",
+    "lint:staged": "lint-staged",
     "format": "prettier --check --ignore-unknown .",
     "format:file": "prettier --check --ignore-unknown",
     "format:fix": "prettier --write --ignore-unknown .",
-    "format:fix:file": "prettier --write --ignore-unknown"
+    "format:fix:file": "prettier --write --ignore-unknown",
+    "prepare": "husky"
   },
   "files": [
     "./dist",
@@ -61,7 +63,9 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.5",
+    "husky": "^9.1.7",
     "jest": "^29.7.0",
+    "lint-staged": "^15.4.3",
     "ts-jest": "^29.2.6",
     "typescript": "^5.7.3"
   }
