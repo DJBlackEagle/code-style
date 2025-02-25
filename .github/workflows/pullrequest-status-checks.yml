@@ -37,9 +37,6 @@ jobs:
       - name: Run ESLint 📝
         run: pnpm run lint
 
-      - name: Run Jest 🃏
-        run: pnpm run test
-
   running_tests:
     name: Unit tests
     runs-on: ubuntu-latest

@@ -1,0 +1,21 @@
+# shellcheck disable=SC2148
+if [ "$GITHUB_ACTIONS" = "true" ]; then
+  exit 0
+fi
+
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep '\.sh$'); do
+  echo "Set the executable bit for $file"
+  git update-index --chmod=+x "$file"
+done
+
+for hook in .husky/*; do
+  if [ -f "$hook" ]; then
+    echo "Set the executable bit for $hook"
+    git update-index --chmod=+x "$hook"
+  fi
+done
+
+pnpm run lint:staged
+pnpm run test
+
+exit 0
