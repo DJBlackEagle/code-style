@@ -25,7 +25,7 @@
     "clean:cache": "rm -rf ./.cache",
     "clean:node": "rm -rf ./node_modules",
     "build": "tsc -p ./tsconfig.build.json",
-    "test": "echo \"Not implemented yet (test).\" && exit 0",
+    "test": "jest",
     "lint": "eslint .",
     "lint:file": "eslint",
     "lint:fix": "eslint --fix .",
@@ -59,7 +59,10 @@
     "typescript-eslint": "^8.25.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.6",
     "typescript": "^5.7.3"
   }
 }
