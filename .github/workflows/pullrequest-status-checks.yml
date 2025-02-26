@@ -1,4 +1,4 @@
-name: Pull-Request Status Check
+name: PR Code Checks
 
 on:
   pull_request:
