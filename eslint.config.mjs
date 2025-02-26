@@ -7,6 +7,7 @@ import tsParser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
+import jsdoc from 'eslint-plugin-jsdoc';
 import tseslint from 'typescript-eslint';
 
 const projectFile = fileURLToPath(import.meta.url);
@@ -64,6 +65,7 @@ const config = [
     name: 'eslint-plugin-prettier/recommended',
     ...eslintPluginPrettierRecommended,
   },
+  jsdoc.configs['flat/recommended-error'],
   {
     ...importPlugin.flatConfigs.recommended,
     name: '@djblackeagle/eslint-plugin-import',
