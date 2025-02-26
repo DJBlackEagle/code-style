@@ -2,7 +2,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "never",
     "source.sortImports": "never",
-    "source.fixAll": "explicit",
+    "source.fixAll": "never",
     "source.removeUnusedImports": "explicit"
   },
   "editor.formatOnSave": true,
