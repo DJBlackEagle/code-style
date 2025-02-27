@@ -1,8 +1,8 @@
-import { djblackeagle } from './index';
+import { prettier } from './index';
 
-describe('prettier.configs.djblackeagle.getConfig', () => {
+describe('prettier.getConfig', () => {
   it('should return the correct configuration object', () => {
-    const config = djblackeagle.getConfig();
+    const config = prettier.getConfig();
     expect(config).toEqual({
       printWidth: 80,
       semi: true,
