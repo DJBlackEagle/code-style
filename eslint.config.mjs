@@ -1,14 +1,14 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import tseslint from 'typescript-eslint';
+import tsParser from '@typescript-eslint/parser';
 import { includeIgnoreFile } from '@eslint/compat';
 import pluginJs from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
-import tseslint from 'typescript-eslint';
 
 const projectFile = fileURLToPath(import.meta.url);
 const projectPath = path.resolve(path.dirname(projectFile), './');
@@ -43,6 +43,7 @@ const config = [
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       },
+      'import/core-modules': ['@typescript-eslint/parser', 'typescript-eslint'],
     },
   },
   { name: '@eslint/js', ...pluginJs.configs.recommended },
@@ -54,7 +55,7 @@ const config = [
       'import/no-anonymous-default-export': ['warn', { allowObject: false }],
       'import/no-extraneous-dependencies': 'error',
       'import/order': 'error',
-      'import/no-unresolved': 'off',
+      // 'import/no-unresolved': 'off',
     },
   },
   {
