@@ -14,6 +14,7 @@ async function getImportResolver(): Promise<import('eslint').Linter.Config[]> {
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       },
+      'import/core-modules': ['@typescript-eslint/parser', 'typescript-eslint'],
     },
   });
 
