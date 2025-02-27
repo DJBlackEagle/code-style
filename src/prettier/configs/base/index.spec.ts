@@ -1,6 +1,6 @@
 import { base } from './index';
 
-describe('base.getConfig', () => {
+describe('prettier.configs.base.getConfig', () => {
   it('should return the correct configuration object', () => {
     const config = base.getConfig();
     expect(config).toEqual({
