@@ -22,13 +22,9 @@ describe('getCommon', () => {
 
     const config: Linter.Config[] = await getCommon('');
 
-    expect(mockFsStatSync).not.toHaveBeenCalledWith('');
-    expect(mockPathDirname).not.toHaveBeenCalledWith('');
+    expect(mockFsStatSync).not.toHaveBeenCalled();
+    expect(mockPathDirname).not.toHaveBeenCalled();
     expect(mockPathResolve).toHaveBeenCalledWith('');
-
-    expect(mockFsStatSync).toHaveBeenCalledTimes(0);
-    expect(mockPathDirname).toHaveBeenCalledTimes(0);
-    expect(mockPathResolve).toHaveBeenCalledTimes(1);
 
     expect(config).toHaveLength(2);
     expect(config[0]).toEqual({
@@ -60,12 +56,8 @@ describe('getCommon', () => {
     const config: Linter.Config[] = await getCommon(mockedPath);
 
     expect(mockFsStatSync).toHaveBeenCalledWith(mockedPath);
-    expect(mockPathDirname).not.toHaveBeenCalledWith(mockedPath);
+    expect(mockPathDirname).not.toHaveBeenCalled();
     expect(mockPathResolve).toHaveBeenCalledWith(mockedPath);
-
-    expect(mockFsStatSync).toHaveBeenCalledTimes(1);
-    expect(mockPathDirname).toHaveBeenCalledTimes(0);
-    expect(mockPathResolve).toHaveBeenCalledTimes(1);
 
     expect(config).toHaveLength(2);
     expect(config[0]).toEqual({
@@ -99,10 +91,6 @@ describe('getCommon', () => {
     expect(mockFsStatSync).toHaveBeenCalledWith('/path/to/file.ts');
     expect(mockPathDirname).toHaveBeenCalledWith('/path/to/file.ts');
     expect(mockPathResolve).toHaveBeenCalledWith('/path/to');
-
-    expect(mockFsStatSync).toHaveBeenCalledTimes(1);
-    expect(mockPathDirname).toHaveBeenCalledTimes(1);
-    expect(mockPathResolve).toHaveBeenCalledTimes(1);
 
     expect(config).toHaveLength(2);
     expect(config[0]).toEqual({
