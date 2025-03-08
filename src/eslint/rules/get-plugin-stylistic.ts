@@ -1,9 +1,17 @@
+import { Linter } from 'eslint';
+
 /**
- * Asynchronously retrieves the ESLint configuration for the 'djblackeagle/stylistic' ruleset.
- * @returns {Promise<import('eslint').Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
+ * Asynchronously loads the '@stylistic/eslint-plugin' and returns its recommended ESLint configuration.
+ * @returns {Promise<Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
  */
-async function getPluginStylistic(): Promise<import('eslint').Linter.Config[]> {
-  const config: Array<import('eslint').Linter.Config> = [];
+async function getPluginStylistic(): Promise<Linter.Config[]> {
+  const pluginStylistic = await import('@stylistic/eslint-plugin');
+  const config: Array<Linter.Config> = [];
+
+  config.push({
+    name: '@stylistic/eslint-plugin',
+    ...pluginStylistic.default.configs.recommended,
+  });
 
   config.push({
     name: 'djblackeagle/stylistic/eslint-plugin',

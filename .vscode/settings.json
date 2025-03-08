@@ -5,6 +5,7 @@
     "source.fixAll": "never",
     "source.removeUnusedImports": "explicit"
   },
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.tabSize": 2,

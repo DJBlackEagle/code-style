@@ -45,6 +45,12 @@ describe('getTypeScript', () => {
     });
   });
 
+  it('should return an array with one configuration object', async () => {
+    const result = await getTypeScript();
+    expect(result).toBeInstanceOf(Array);
+    expect(result.length).toBe(3);
+  });
+
   it('should return a configuration object with the correct name', async () => {
     const result = await getTypeScript();
     expect(result[0].name).toBe('mock-recommended-config-1');

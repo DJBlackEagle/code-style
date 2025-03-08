@@ -1,7 +1,18 @@
 import { rules } from './index';
 
 describe('rules', () => {
-  const expectedKeys = ['base', 'djblackeagle'] as const;
+  const expectedKeys = [
+    'getCommon',
+    'getEslint',
+    'getEslintJs',
+    'getIgnores',
+    'getImportResolver',
+    'getPluginImport',
+    'getPluginJsDoc',
+    'getPluginPrettier',
+    'getPluginStylistic',
+    'getTypeScript',
+  ] as const;
 
   it(`should have exactly ${expectedKeys.length} keys`, () => {
     expect(Object.keys(rules).length).toBe(expectedKeys.length);
@@ -12,12 +23,12 @@ describe('rules', () => {
   });
 
   it.each(expectedKeys)(
-    'should have "%s" as a valid object in rules',
+    'should have "%s" as a valid function in rules',
     (property) => {
       expect(rules).toBeInstanceOf(Object);
       expect(rules).toHaveProperty(property);
       expect((rules as Record<string, unknown>)[property]).toBeInstanceOf(
-        Object,
+        Function,
       );
     },
   );

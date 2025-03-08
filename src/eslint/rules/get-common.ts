@@ -1,19 +1,20 @@
 import fs from 'fs';
 import path from 'node:path';
 import globals from 'globals';
+import { Linter } from 'eslint';
 
 /**
  * Asynchronously retrieves common ESLint configurations based on the provided root path.
- * @param {string} [rootPath] - The root path to determine the project directory.
- * @returns {Promise<import('eslint').Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
+ * @param {string} [projectPath] - The root path to determine the project directory.
+ * @returns {Promise<Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
  */
-async function getCommon(
-  rootPath: string,
-): Promise<import('eslint').Linter.Config[]> {
-  const isFile = rootPath ? fs.statSync(rootPath).isFile() : false;
-  const projectPath = path.resolve(isFile ? path.dirname(rootPath) : rootPath);
+async function getCommon(projectPath: string): Promise<Linter.Config[]> {
+  const isFile = projectPath ? fs.statSync(projectPath).isFile() : false;
+  const projectPathSave = path.resolve(
+    isFile ? path.dirname(projectPath) : projectPath,
+  );
   const pluginTsParser = await import('@typescript-eslint/parser');
-  const config: Array<import('eslint').Linter.Config> = [];
+  const config: Array<Linter.Config> = [];
 
   config.push({
     name: 'Applies to files matching',
@@ -27,7 +28,7 @@ async function getCommon(
       parser: pluginTsParser,
       parserOptions: {
         project: './tsconfig.eslint.json',
-        tsconfigRootDir: projectPath,
+        tsconfigRootDir: projectPathSave,
       },
       globals: { ...globals.browser, ...globals.node },
     },

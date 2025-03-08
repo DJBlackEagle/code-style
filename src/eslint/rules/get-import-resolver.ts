@@ -1,9 +1,11 @@
+import { Linter } from 'eslint';
+
 /**
  * Asynchronously retrieves the ESLint import resolver configuration.
- * @returns {Promise<import('eslint').Linter.Config[]>} A promise that resolves to an array of ESLint Linter configuration objects.
+ * @returns {Promise<Linter.Config[]>} A promise that resolves to an array of ESLint Linter configuration objects.
  */
-async function getImportResolver(): Promise<import('eslint').Linter.Config[]> {
-  const config: Array<import('eslint').Linter.Config> = [];
+async function getImportResolver(): Promise<Linter.Config[]> {
+  const config: Array<Linter.Config> = [];
 
   config.push({
     name: 'import resolver settings',

@@ -24,7 +24,7 @@ describe('getPluginStylistic', () => {
   it('should return an array with one configuration object', async () => {
     const result = await getPluginStylistic();
     expect(result).toBeInstanceOf(Array);
-    expect(result.length).toBe(1);
+    expect(result.length).toBe(3);
   });
 
   it('should return a configuration object with the correct name', async () => {

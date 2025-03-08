@@ -21,7 +21,7 @@ describe('getPluginImport', () => {
   it('should return an array with one configuration object', async () => {
     const result = await getPluginImport();
     expect(result).toBeInstanceOf(Array);
-    expect(result.length).toBe(1);
+    expect(result.length).toBe(2);
   });
 
   it('should return a configuration object with the correct name', async () => {
