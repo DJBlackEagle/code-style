@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+import fs from 'fs';
 import path from 'node:path';
 import globals from 'globals';
 
@@ -10,7 +10,7 @@ import globals from 'globals';
 async function getCommon(
   rootPath: string,
 ): Promise<import('eslint').Linter.Config[]> {
-  const isFile = rootPath ? (await fs.stat(rootPath)).isFile() : false;
+  const isFile = rootPath ? fs.statSync(rootPath).isFile() : false;
   const projectPath = path.resolve(isFile ? path.dirname(rootPath) : rootPath);
   const pluginTsParser = await import('@typescript-eslint/parser');
   const config: Array<import('eslint').Linter.Config> = [];
