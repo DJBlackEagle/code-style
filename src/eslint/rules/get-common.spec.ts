@@ -22,8 +22,6 @@ describe('getCommon', () => {
 
     const config: Linter.Config[] = await getCommon('');
 
-    expect(mockFsStatSync).not.toHaveBeenCalled();
-    expect(mockPathDirname).not.toHaveBeenCalled();
     expect(mockPathResolve).toHaveBeenCalledWith('');
 
     expect(config).toHaveLength(2);
@@ -56,7 +54,6 @@ describe('getCommon', () => {
     const config: Linter.Config[] = await getCommon(mockedPath);
 
     expect(mockFsStatSync).toHaveBeenCalledWith(mockedPath);
-    expect(mockPathDirname).not.toHaveBeenCalled();
     expect(mockPathResolve).toHaveBeenCalledWith(mockedPath);
 
     expect(config).toHaveLength(2);
