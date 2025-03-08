@@ -1,3 +1,4 @@
+import { Linter } from 'eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 /**
@@ -5,10 +6,10 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
  *
  * This function returns an array of ESLint configurations that include the recommended
  * settings for integrating Prettier with ESLint.
- * @returns {Promise<import('eslint').Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
+ * @returns {Promise<Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
  */
-async function getPluginPrettier(): Promise<import('eslint').Linter.Config[]> {
-  const config: Array<import('eslint').Linter.Config> = [];
+async function getPluginPrettier(): Promise<Linter.Config[]> {
+  const config: Array<Linter.Config> = [];
 
   config.push({
     name: 'eslint-plugin-prettier/recommended',

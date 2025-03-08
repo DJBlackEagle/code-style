@@ -1,9 +1,11 @@
+import { Linter } from 'eslint';
+
 /**
  * Asynchronously retrieves the ESLint configuration for the 'djblackeagle/eslint' ruleset.
- * @returns {Promise<import('eslint').Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
+ * @returns {Promise<Linter.Config[]>} A promise that resolves to an array of ESLint configurations.
  */
-async function getEslint(): Promise<import('eslint').Linter.Config[]> {
-  const config: Array<import('eslint').Linter.Config> = [];
+async function getEslint(): Promise<Linter.Config[]> {
+  const config: Array<Linter.Config> = [];
 
   config.push({
     name: 'djblackeagle/eslint',
