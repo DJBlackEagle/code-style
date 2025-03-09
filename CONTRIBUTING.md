@@ -261,3 +261,4 @@ This guide is based on the [contributing.md][REF_EXTERN_CONTRIBUTING_MD]!
 [REF_EXTERN_YARN]: https://yarnpkg.com
 [REF_EXTERN_ESLINT]: https://eslint.org
 [REF_EXTERN_PRETTIER]: https://prettier.io
+[REF_EXTERN_COMMITLINT]: https://commitlint.js.org/

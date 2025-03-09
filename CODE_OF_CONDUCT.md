@@ -159,3 +159,4 @@ For answers to common questions about this code of conduct, see the FAQ at
 [REF_EXTERN_YARN]: https://yarnpkg.com
 [REF_EXTERN_ESLINT]: https://eslint.org
 [REF_EXTERN_PRETTIER]: https://prettier.io
+[REF_EXTERN_COMMITLINT]: https://commitlint.js.org/
