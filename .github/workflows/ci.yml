@@ -1,4 +1,4 @@
-name: PR Code Checks
+name: CI
 
 on:
   pull_request:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  running_code_check:
-    name: Checking code format style
+  code_check:
+    name: Check code
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -37,7 +37,7 @@ jobs:
       - name: Run ESLint 📝
         run: pnpm run lint
 
-  running_tests:
+  test_on_node:
     name: Unit tests
     runs-on: ubuntu-latest
     strategy:
