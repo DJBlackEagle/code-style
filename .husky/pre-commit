@@ -9,6 +9,6 @@ for file in $(git diff --cached --name-only --diff-filter=ACM | grep -E '\.sh$|^
 done
 
 pnpm run lint:staged
-pnpm run test
+pnpm run test:check
 
 exit 0
