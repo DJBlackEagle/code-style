@@ -46,6 +46,7 @@ This section will guide you through setting up and configuring `@djblackeagle/co
 - [npm][REF_EXTERN_NPM] or [pnpm][REF_EXTERN_PNPM] or [Yarn][REF_EXTERN_YARN]
 - [ESLint][REF_EXTERN_ESLINT] (>=9.0.0)
 - [Prettier][REF_EXTERN_PRETTIER] (>=3.5.0)
+- [commitlint][REF_EXTERN_COMMITLINT] (>=19.8.0)
 
 [[Go to top](#welcome-to-djblackeaglecode-style)]
 
@@ -55,13 +56,13 @@ Install `@djblackeagle/code-style` and its dependencies using your preferred pac
 
 ```sh
 # npm
-npm install --save-dev @djblackeagle/code-style eslint prettier
+npm install --save-dev @djblackeagle/code-style eslint prettier @commitlint/cli @commitlint/config-conventional
 
 # pnpm
-pnpm add --save-dev @djblackeagle/code-style eslint prettier
+pnpm add --save-dev @djblackeagle/code-style eslint prettier @commitlint/cli @commitlint/config-conventional
 
 # Yarn
-yarn add --dev @djblackeagle/code-style eslint prettier
+yarn add --dev @djblackeagle/code-style eslint prettier @commitlint/cli @commitlint/config-conventional
 ```
 
 [[Go to top](#welcome-to-djblackeaglecode-style)]
@@ -70,26 +71,40 @@ yarn add --dev @djblackeagle/code-style eslint prettier
 
 ### ESLint <!-- omit in toc -->
 
-Create or modify your eslint.config.mjs file and add the following:
+Create or modify your `eslint.config.mjs` file and add the following:
 
 ```javascript
 import { codeStyle } from '@djblackeagle/code-style';
 
 /** @type {import('eslint').Linter.Config[]} */
-const config = [...(await codeStyle.eslint.configs.base())];
+const config = [...(await codeStyle.eslint.configs.base(''))];
 
 export default config;
 ```
 
 ### Prettier <!-- omit in toc -->
 
-Create or modify your prettier.config.mjs file and add the following:
+Create or modify your `prettier.config.mjs` file and add the following:
 
 ```javascript
 import { codeStyle } from '@djblackeagle/code-style';
 
 const config = {
   ...codeStyle.prettier.configs.base(),
+};
+
+export default config;
+```
+
+### commitlint <!-- omit in toc -->
+
+Create or modify your `commitlint.config.mjs` file and add the following:
+
+```javascript
+import { codeStyle } from '@djblackeagle/code-style';
+
+const config = {
+  ...(await codeStyle.commitlint.configs.base()),
 };
 
 export default config;
@@ -150,3 +165,4 @@ This project is licensed under the [MIT License][REF_INTERN_URL_LICENSE].
 [REF_EXTERN_YARN]: https://yarnpkg.com
 [REF_EXTERN_ESLINT]: https://eslint.org
 [REF_EXTERN_PRETTIER]: https://prettier.io
+[REF_EXTERN_COMMITLINT]: https://commitlint.js.org/

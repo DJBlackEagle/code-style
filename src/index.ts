@@ -1,9 +1,7 @@
+import { commitlint } from './commitlint';
 import { eslint } from './eslint';
 import { prettier } from './prettier';
 
-const codeStyle = {
-  eslint,
-  prettier,
-};
+const codeStyle = { commitlint, eslint, prettier };
 
 export { codeStyle };
