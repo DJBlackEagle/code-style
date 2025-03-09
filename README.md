@@ -1,11 +1,11 @@
-# @djblackeagle/code-style <!-- omit in toc -->
+# **Welcome to @djblackeagle/code-style** <!-- omit in toc -->
 
 [![npm version](https://img.shields.io/npm/v/@djblackeagle/code-style.svg)][REF_INTERN_URL_NPMJS_PACKAGE]
 [![Downloads](https://img.shields.io/npm/dm/@djblackeagle/code-style.svg)][REF_INTERN_URL_NPMJS_PACKAGE]
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)][REF_INTERN_URL_LICENSE]
+[![CodeQL](https://github.com/DJBlackEagle/code-style/workflows/CodeQL/badge.svg)][REF_INTERN_URL_ACTION_CODEQL]
+[![Build Status](https://github.com/DJBlackEagle/code-style/workflows/CI/badge.svg)][REF_INTERN_URL_ACTION_CI]
 [![Code Style](https://img.shields.io/badge/code_style-@djblackeagle/code--style-blue.svg)][REF_INTERN_URL_CODESTYLE]
-[![CodeQL](https://github.com/DJBlackEagle/code-style/workflows/CodeQL/badge.svg)][REF_INTERN_URL_ACTIONS]
-[![Build Status](https://github.com/DJBlackEagle/code-style/workflows/CI/badge.svg)][REF_INTERN_URL_ACTIONS]
 
 **A unified configuration to enforce consistent code style across your JavaScript and TypeScript projects, using ESLint, Prettier, and Commitlint.**
 
@@ -32,13 +32,13 @@ Using `@djblackeagle/code-style` offers several advantages for your projects:
 - **Quality:** Improve code quality by catching potential issues early with ESLint.
 - **Standardized Commits:** Ensure clear and informative commit messages with Commitlint, following [Conventional Commits][REF_EXTERN_CONVENTIONALCOMMITS].
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 # Getting Started
 
 This section will guide you through setting up and configuring `@djblackeagle/code-style` in your project.
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 ## Requirements
 
@@ -47,7 +47,7 @@ This section will guide you through setting up and configuring `@djblackeagle/co
 - [ESLint][REF_EXTERN_ESLINT] (>=9.0.0)
 - [Prettier][REF_EXTERN_PRETTIER] (>=3.5.0)
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 ## Installation
 
@@ -64,7 +64,7 @@ pnpm add --save-dev @djblackeagle/code-style eslint prettier
 yarn add --dev @djblackeagle/code-style eslint prettier
 ```
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 ## Configuration
 
@@ -95,31 +95,31 @@ const config = {
 export default config;
 ```
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 # Contributing
 
 We welcome contributions from the community! If you're interested in helping to improve `@djblackeagle/code-style`, please take a look at our [Contributing Guidelines][REF_INTERN_URL_CONTRIBUTING] for more information on how to get started.
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 # Code of Conduct
 
 We are committed to fostering a welcoming and inclusive community. Please review our [Code of Conduct][REF_INTERN_URL_CODE_OF_CONDUCT] to understand our expectations for behavior within the project.
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 # Security
 
 If you discover a security vulnerability in `@djblackeagle/code-style`, please follow our [Security Guidelines][REF_INTERN_URL_SECURITY] to report it responsibly.
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 # License
 
 This project is licensed under the [MIT License][REF_INTERN_URL_LICENSE].
 
-[[Go to top](#djblackeaglecode-style)]
+[[Go to top](#welcome-to-djblackeaglecode-style)]
 
 [REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/code-style
 [REF_INTERN_URL_CONTRIBUTING]: https://github.com/DJBlackEagle/code-style/blob/main/CONTRIBUTING.md
@@ -135,6 +135,8 @@ This project is licensed under the [MIT License][REF_INTERN_URL_LICENSE].
 [REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/code-style/security
 [REF_INTERN_URL_NEW_VULNERABILITY]: https://github.com/DJBlackEagle/code-style/security/advisories/new
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style/actions
+[REF_INTERN_URL_ACTION_CODEQL]: https://github.com/DJBlackEagle/code-style/actions/workflows/codeql.yml
+[REF_INTERN_URL_ACTION_CI]: https://github.com/DJBlackEagle/code-style/actions/workflows/ci.yml
 [REF_INTERN_EMAIL_ADDRESS_COD]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_OWNER]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_SECURITY]: mailto:djblackeagle-dev@djblackeagle.services

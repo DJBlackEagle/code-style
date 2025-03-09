@@ -144,6 +144,8 @@ For answers to common questions about this code of conduct, see the FAQ at
 [REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/code-style/security
 [REF_INTERN_URL_NEW_VULNERABILITY]: https://github.com/DJBlackEagle/code-style/security/advisories/new
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style/actions
+[REF_INTERN_URL_ACTION_CODEQL]: https://github.com/DJBlackEagle/code-style/actions/workflows/codeql.yml
+[REF_INTERN_URL_ACTION_CI]: https://github.com/DJBlackEagle/code-style/actions/workflows/ci.yml
 [REF_INTERN_EMAIL_ADDRESS_COD]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_OWNER]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_SECURITY]: mailto:djblackeagle-dev@djblackeagle.services
