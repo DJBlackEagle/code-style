@@ -1,6 +1,4 @@
-<!-- omit in toc -->
-
-# Contributing to @djblackeagle/code-style
+# Contributing to @djblackeagle/code-style <!-- omit in toc -->
 
 First off, thanks for taking the time to contribute! ❤️
 
@@ -13,9 +11,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 > - Refer this project in your project's readme
 > - Mention the project at local meetups and tell your friends/colleagues
 
-<!-- omit in toc -->
-
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
 - [Code of Conduct](#code-of-conduct)
 - [I Have a Question](#i-have-a-question)
@@ -69,9 +65,7 @@ Depending on how large the project is, you may want to outsource the questioning
 
 ### Reporting Bugs
 
-<!-- omit in toc -->
-
-#### Before Submitting a Bug Report
+#### Before Submitting a Bug Report <!-- omit in toc -->
 
 A good bug report shouldn't leave others needing to chase you up for more information. Therefore, we ask you to investigate carefully, collect information and describe the issue in detail in your report. Please complete the following steps in advance to help us fix any potential bug as fast as possible.
 
@@ -86,9 +80,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
   - Possibly your input and the output
   - Can you reliably reproduce the issue? And can you also reproduce it with older versions?
 
-<!-- omit in toc -->
-
-#### How Do I Submit a Good Bug Report?
+#### How Do I Submit a Good Bug Report? <!-- omit in toc -->
 
 > You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to [DJ BlackEagle][REF_INTERN_EMAIL_ADDRESS_SECURITY].
 
@@ -113,18 +105,14 @@ Once it's filed:
 
 This section guides you through submitting an enhancement suggestion for @djblackeagle/code-style, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
 
-<!-- omit in toc -->
-
-#### Before Submitting an Enhancement
+#### Before Submitting an Enhancement <!-- omit in toc -->
 
 - Make sure that you are using the latest version.
 - Read the [documentation][REF_INTERN_URL_README] carefully and find out if the functionality is already covered, maybe by an individual configuration.
 - Perform a [search][REF_INTERN_URL_ISSUES] to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
-<!-- omit in toc -->
-
-#### How Do I Submit a Good Enhancement Suggestion?
+#### How Do I Submit a Good Enhancement Suggestion? <!-- omit in toc -->
 
 Enhancement suggestions are tracked as [issues][REF_INTERN_URL_ISSUES].
 
@@ -154,13 +142,11 @@ Updating, improving and correcting the documentation
 
 ### Commit Messages
 
-We follow the commit message policy based on the '[Conventional Commits][REF_EXTERN_COMMIT_MESSAGE_FORMAT]' rules.
+We follow the commit message policy based on the '[Conventional Commits][REF_EXTERN_CONVENTIONALCOMMITS]' rules.
 
 We have strict rules for formatting our git commit messages. This ensures **more readable messages** that are easy to follow when reviewing the project history. Additionally, we use git commit messages to **automatically generate the changelog**.
 
-<!-- omit in toc -->
-
-#### Commit Message Format
+#### Commit Message Format <!-- omit in toc -->
 
 Each commit message consists of a **header**, a **body**, and a **footer**. The header follows a specific format that includes a **type**, a **scope**, and a **subject**:
 
@@ -178,17 +164,13 @@ No line in the commit message should exceed 100 characters. This ensures better 
 
 Footer should include a [closing reference to an issue](https://help.github.com/articles/closing-issues-via-commit-messages/) if applicable.
 
-<!-- omit in toc -->
-
-#### Revert
+#### Revert <!-- omit in toc -->
 
 If the commit reverts a previous commit, it should begin with `revert:`, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
 
 If the commit reverts a previous commit, it should begin with `revert:`, followed by the header of the reverted commit. The body should include the line: `This reverts commit <hash>.`, where <hash> is the SHA of the commit being reverted.
 
-<!-- omit in toc -->
-
-#### Type
+#### Type <!-- omit in toc -->
 
 Must be one of the following:
 
@@ -204,9 +186,7 @@ Must be one of the following:
 - **test**: Adding or correcting tests.
 - **sample**: Changes to sample code.
 
-<!-- omit in toc -->
-
-#### Scope
+#### Scope <!-- omit in toc -->
 
 The scope should match the name of the affected npm package, as it would be perceived by someone reading the changelog generated from commit messages.
 
@@ -225,9 +205,7 @@ The following is the list of supported scopes:
 
 If your change affects more than one package, separate the scopes with a comma (e.g., `common,core`).
 
-<!-- omit in toc -->
-
-#### Subject
+#### Subject <!-- omit in toc -->
 
 The subject contains a succinct description of the change:
 
@@ -235,26 +213,20 @@ The subject contains a succinct description of the change:
 - Do not capitalize the first letter.
 - Avoid a period (.) at the end.
 
-<!-- omit in toc -->
-
-#### Body
+#### Body <!-- omit in toc -->
 
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" or "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
-<!-- omit in toc -->
-
-#### Footer
+#### Footer <!-- omit in toc -->
 
 The footer should include any information about **Breaking Changes** and is also the appropriate place to reference GitHub issues that this commit **closes**.
 
 **Breaking Changes** should begin with the word `BREAKING CHANGE:` followed by a space or two newlines. The remainder of the commit message should then provide the relevant details.
 
-A detailed explanation can be found in this [document][REF_EXTERN_COMMIT_MESSAGE_FORMAT].
+A detailed explanation can be found in this [document][REF_EXTERN_CONVENTIONALCOMMITS].
 
-<!-- omit in toc -->
-
-## Attribution
+## Attribution <!-- omit in toc -->
 
 This guide is based on the [contributing.md][REF_EXTERN_CONTRIBUTING_MD]!
 
@@ -273,8 +245,17 @@ This guide is based on the [contributing.md][REF_EXTERN_CONTRIBUTING_MD]!
 [REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style/commits/main/
 [REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/code-style/security
 [REF_INTERN_URL_NEW_VULNERABILITY]: https://github.com/DJBlackEagle/code-style/security/advisories/new
+[REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style/actions
 [REF_INTERN_EMAIL_ADDRESS_COD]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_OWNER]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_SECURITY]: mailto:djblackeagle-dev@djblackeagle.services
-[REF_EXTERN_COMMIT_MESSAGE_FORMAT]: https://www.conventionalcommits.org/en/v1.0.0/
+[REF_INTERN_URL_NPMJS_PACKAGE]: https://www.npmjs.com/package/@djblackeagle/code-style
+[REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style
+[REF_EXTERN_CONVENTIONALCOMMITS]: https://www.conventionalcommits.org/en/v1.0.0/
 [REF_EXTERN_CONTRIBUTING_MD]: https://contributing.md/generator
+[REF_EXTERN_NODEJS]: https://nodejs.org
+[REF_EXTERN_NPM]: https://www.npmjs.com
+[REF_EXTERN_PNPM]: https://pnpm.io
+[REF_EXTERN_YARN]: https://yarnpkg.com
+[REF_EXTERN_ESLINT]: https://eslint.org
+[REF_EXTERN_PRETTIER]: https://prettier.io
