@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "DavidAnson.vscode-markdownlint",
+    "crystal-spider.jsdoc-generator",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "foxundermoon.shell-format",
+    "mechatroner.rainbow-csv",
+    "oderwat.indent-rainbow",
+    "rangav.vscode-thunder-client",
+    "redhat.vscode-yaml",
+    "timonwong.shellcheck",
+    "yzhang.markdown-all-in-one"
+  ]
+}

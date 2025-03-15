@@ -1,0 +1,270 @@
+name: 📉 Regression
+description: Report a regression in functionality, performance, or behavior.
+labels: ['needs triage', 'Issue: Regression']
+assignees:
+  - DJBlackEagle
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 📉 Regression issue
+        Use this template to report a regression, where previously working functionality, performance, or behavior is no longer functioning as expected.
+
+        Please fill out the sections below to help us address the issue effectively.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📜 Terms
+
+  - type: checkboxes
+    id: existing_issue
+    attributes:
+      label: ⚠️ Is there an existing issue for this?
+      description: Please search [here](./?q=is%3Aissue) to see if an issue already exists for the bug you encountered
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ⚖️ Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/DJBlackEagle/code-style/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📋 Issue description
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🏷️ Severity Level
+      description: How critical is this issue?
+      options:
+        - 🚨 Critical - Breaks core functionality or causes major disruption
+        - ⚠️ High - Significant impact on functionality or performance
+        - ❕ Medium - Noticeable but non-critical impact
+        - ✅ Low - Minor regression with minimal impact
+      default: 2
+
+  - type: input
+    id: package_version_before
+    validations:
+      required: true
+    attributes:
+      label: 🔢 Package version before
+      description: |
+        Which version of are you using before?
+      placeholder: 2.1.0
+
+  - type: input
+    id: package_version
+    validations:
+      required: true
+    attributes:
+      label: 🔢 Package version
+      description: |
+        Which version of are you using?
+        **Tip**: Make sure that all of yours dependencies are in sync!
+      placeholder: 2.1.1
+
+  - type: textarea
+    id: issue_details
+    attributes:
+      label: 📝 Detailed Description
+      description: Describe the current behavior that is incorrect or has regressed.
+      placeholder: E.g., "The API endpoint `/users` returns a 500 error after the update."
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: ✅ Expected Behavior
+      description: Describe the behavior that was expected before the regression occurred.
+      placeholder: E.g., "The `/users` endpoint should return user data with a 200 status code."
+
+  - type: textarea
+    id: steps_to_reproduce
+    validations:
+      required: true
+    attributes:
+      label: 🪜 Steps to Reproduce
+      description: Provide a step-by-step description of how to reproduce this issue.
+      placeholder: |
+        1. `npm i`
+        2. `npm start:dev`
+        3. Go to the `/users` endpoint.
+        4. Use a valid API token for authentication.
+        5. Observe the 500 error in the response.
+
+  - type: input
+    id: minimum_reproduction_code
+    attributes:
+      label: 📦 Minimum reproduction code
+      description: An URL to some git repository or gist that reproduces this issue. [Wtf is a minimum reproduction?](https://jmcdo29.github.io/wtf-is-a-minimum-reproduction)
+      placeholder: https://github.com/...
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📦 Environment NodeJS
+
+  - type: input
+    id: node_version
+    validations:
+      required: true
+    attributes:
+      label: 🔢 Node.js version
+      description: Which version of Node.js are you using?
+      placeholder: 18.15.0
+
+  - type: textarea
+    id: dependencies
+    validations:
+      required: true
+    attributes:
+      label: 🧩 Dependencies of your project
+      description: Your dependencies in your package.json
+      placeholder: |
+        "@inquirer/prompts": "^1.2.2",
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.0",
+        "commander": "^10.0.1",
+        "reflect-metadata": "^0.1.13"
+
+  - type: textarea
+    id: dev_dependencies
+    validations:
+      required: true
+    attributes:
+      label: 🔗 Dev dependencies of your project
+      description: Your dev dependencies in your package.json
+      placeholder: |
+        "@types/node": "^20.1.7",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 🛠️ Environment
+
+  - type: dropdown
+    id: os
+    validations:
+      required: true
+    attributes:
+      label: 💻 In which operating systems have you tested?
+      multiple: false
+      options:
+        - Linux
+        - macOS
+        - Windows
+      default: 0
+
+  - type: input
+    id: os_version
+    validations:
+      required: true
+    attributes:
+      label: 🔢 Which version of the operating system do you use?
+      placeholder: Ubuntu 24.04.1 LTS
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 🌐 What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # ℹ️ Additional information
+
+  - type: dropdown
+    id: ide
+    attributes:
+      label: 🖥️ IDE (Development Environment)
+      description: Which IDE were you using?
+      options:
+        - 'Eclipse'
+        - 'IntelliJ IDEA'
+        - 'NetBeans'
+        - 'Visual Studio Code'
+        - 'Visual Studio'
+        - 'WebStorm'
+        - 'Other'
+      default: 6
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: ➕ Additional Context
+      description: Provide any additional context, links, or resources to support your request.
+      placeholder: E.g., Reference to similar features in other tools or mockups of the feature.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 🌀 Other
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshots
+      description: Add screenshots
+      placeholder: Drag and drop images here
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: markdown
+    attributes:
+      value: Thanks for completing our form!

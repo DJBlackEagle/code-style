@@ -1,0 +1,129 @@
+name: 📋 Task
+description: Track and manage a specific task or to-do item.
+labels: ['task', 'Issue: Task']
+assignees:
+  - DJBlackEagle
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 📋 Task issue
+        Use this template to report a regression, where previously working functionality, performance, or behavior is no longer functioning as expected.
+
+        Please fill out the sections below to help us address the issue effectively.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📜 Terms
+
+  - type: checkboxes
+    id: existing_issue
+    attributes:
+      label: ⚠️ Is there an existing issue for this?
+      description: Please search [here](./?q=is%3Aissue) to see if an issue already exists for the bug you encountered
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ⚖️ Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/DJBlackEagle/code-style/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📋 Issue description
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🏷️ Severity Level
+      description: How critical is this issue?
+      options:
+        - 🚨 Critical - Task is urgent and essential for the project
+        - ⚠️ High - Task is important and should be completed soon
+        - ❕ Medium - Task is useful but not time-critical
+        - ✅ Low - Task is nice to have but can wait
+      default: 2
+
+  - type: textarea
+    id: issue_details
+    attributes:
+      label: 📝 Detailed Description
+      description: Provide a detailed description of the task, including the goals, scope, and context.
+      placeholder: |
+        E.g., "Refactor the user authentication module to improve maintainability and security. Ensure backward compatibility."
+
+        Tasks:
+        - [ ] Add something
+        - [ ] Add this thing
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the conditions that must be met for this task to be considered complete.
+      placeholder: |
+        E.g.,
+        - All tests pass.
+        - Code coverage remains above 90%.
+        - No breaking changes introduced.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # ℹ️ Additional information
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: ➕ Additional Context
+      description: Provide any additional context, links, or resources to support your request.
+      placeholder: E.g., Reference to similar features in other tools or mockups of the feature.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 🌀 Other
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshots
+      description: Add screenshots
+      placeholder: Drag and drop images here
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: markdown
+    attributes:
+      value: Thanks for completing our form!
