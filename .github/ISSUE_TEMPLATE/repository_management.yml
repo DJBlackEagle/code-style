@@ -1,0 +1,140 @@
+name: 🛠️ Repository Management
+description: Report an issue or suggest an improvement related to repository configuration, structure, or workflows.
+labels: ['repository', 'management', 'Issue: Repository Management']
+assignees:
+  - DJBlackEagle
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🛠️ Repository Management
+        Use this template to report issues or suggest improvements related to the repository. This includes configuration, structure, permissions, branch rules, or GitHub workflows.
+
+        Please fill out the sections below to help us address the issue effectively.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📜 Terms
+
+  - type: checkboxes
+    id: existing_issue
+    attributes:
+      label: ⚠️ Is there an existing issue for this?
+      description: Please search [here](./?q=is%3Aissue) to see if an issue already exists for the topic you want to report.
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ⚖️ Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/DJBlackEagle/code-style/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 📋 Issue description
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🏷️ Severity Level
+      description: How critical is this issue or suggestion?
+      options:
+        - 🚨 Critical - Severely impacts repository functionality or collaboration
+        - ⚠️ High - Significant impact on efficiency or security
+        - ❕ Medium - Moderate improvement with noticeable benefits
+        - ✅ Low - Minor or optional enhancement
+      default: 2
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 🗃️ Category
+      description: Select the category that best fits your issue or suggestion.
+      options:
+        - Branch Protection Rules
+        - Configuration
+        - GitHub Actions or Workflows
+        - Permissions
+        - Repository Structure
+        - Documentation
+        - Other
+      default: 1
+
+  - type: textarea
+    id: issue_details
+    validations:
+      required: true
+    attributes:
+      label: 📝 Detailed Description
+      description: Provide a detailed explanation of the issue or suggestion, including relevant steps, examples, or configurations. This field is required to help us address the issue effectively.
+      placeholder: E.g., Currently, the `main` branch allows direct pushes. Enabling branch protection rules would ensure pull requests are mandatory for changes.
+
+  - type: textarea
+    id: expected_behavior
+    validations:
+      required: true
+    attributes:
+      label: ✅ Expected Outcome or Improvement
+      description: Describe the desired outcome or improvement if this issue is resolved or the suggestion is implemented. This field is required to help us understand the goal.
+      placeholder: E.g., Branch protection rules prevent direct pushes and improve collaboration safety.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # ℹ️ Additional information
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: ➕ Additional Context (Optional)
+      description: Provide any additional context, links, or resources to support your request. This field is optional but helps provide a complete picture.
+      placeholder: E.g., Reference to similar features in other tools or mockups of the feature.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        # 🌀 Other
+
+  - type: textarea
+    id: other_details
+    attributes:
+      label: 🌀 Other Details (Optional)
+      description: Use this section for anything that doesn't fit into the predefined categories. This field is optional but useful for miscellaneous information.
+      placeholder: E.g., Any additional details not covered above.
+
+  - type: markdown
+    attributes:
+      value: '&nbsp;'
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: markdown
+    attributes:
+      value: Thanks for completing our form!
